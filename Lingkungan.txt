@@ -1,1 +1,1 @@
-Kondisi Lantai : erewrKondisi Dinding : fefKondisi Atap : erKondisi Pintu : 4r4Kondisi Jendela : fewf
+Kondisi Lantai : BersihKondisi Dinding : BersihKondisi Atap : KotorKondisi Pintu : KotorKondisi Jendela : Bersih

@@ -1,8 +1,7 @@
-
 package tb;
 import java.util.Scanner;
 import java.io.FileWriter;
-public class KabelLCD implements JumlahKondisiSarana {
+public class StopKontak implements JumlahKondisiSarana {
     Scanner input = new Scanner(System.in);
     private int Jumlah;
     private String Kondisi;
@@ -31,35 +30,37 @@ public class KabelLCD implements JumlahKondisiSarana {
     public void setPosisi(String Posisi) {
         this.Posisi = Posisi;
     }
-
+    
+    
+    
     @Override
     public int analisisJumlah() {
-/*        System.out.println("Masukkan Jumlah Kabel LCD : ");
+    /*    System.out.println("Masukkan Jumlah Stop Kontak : ");
 		setJumlah(input.nextInt()); */
-		if(getJumlah() >= 1){
+		if(getJumlah() == 4){
 			return 1;
 		}
 		else{
 			return 0;
-		}
-    }
-
-    @Override
-    public int analisisKondisi() {
-/*        System.out.println("Masukkan Kondisi Kabel LCD : ");
-		setKondisi(input.next());   */
-		if(getKondisi().equals("Berfungsi")){
-			return 1;
-		}
-		else{
-			return 0;
-		}
+		}   
     
     }
 
     @Override
+    public int analisisKondisi() {
+    /*    System.out.println("Masukkan Kondisi Stop Kontak : ");
+		setKondisi(input.next());   */
+		if(getKondisi().equals("Baik") && getJumlah() == 2){
+			return 1;
+		}
+		else{
+			return 0; 
+		}
+    }
+
+    @Override
     public int analisisPosisi() {
-/*        System.out.println("Masukkan Posisi Kabel LCD : ");
+    /*    System.out.println("Masukkan Posisi Stop Kontak : ");
 		setPosisi(input.next());    */
 		if(getPosisi().equals("Dekat Dosen")){
 			return 1;
@@ -67,25 +68,26 @@ public class KabelLCD implements JumlahKondisiSarana {
 		else{
 			return 0;
 		}
-	}
-
-	public void Tampil() {
-		System.out.println("Jumlah Kabel LCD : "+getJumlah());
-		System.out.println("Kondisi Kabel LCD : "+getKondisi());
-		System.out.println("Posisi Kabel LCD : "+getPosisi());
-	}
+    }
     
-        
-        public void Simpan(){
-          
-                  try {
-                FileWriter ketik = new FileWriter("LCD.txt");
-                ketik.write("Jumlah Kabel LCD : "+getJumlah());
-                ketik.write("Kondisi Kabel LCD : "+getKondisi());
-                ketik.write("Posisi Kabel LCD : "+getPosisi());
-                 ketik.close();      
-            }
-            catch (Exception a){
+    public void tampil() {
+	System.out.println("Jumlah Stop Kontak : "+getJumlah());
+	System.out.println("Kondisi Stop Kontak : "+getKondisi());
+	System.out.println("Posisi Stop Kontak : "+getPosisi());	
+    }
+    
+    public void simpan(){
+        try {
+            FileWriter ketik = new FileWriter("StopKontak.txt");
+            ketik.write("Jumlah Stop Kontak : "+getJumlah());
+            ketik.write("Kondisi Stop Kontak : "+getKondisi());
+            ketik.write("Posisi Stop Kontak : "+getPosisi());
+            ketik.close();
+                
+    }
+        catch (Exception a){
                 a.printStackTrace();
             }
-}}
+        }
+    
+}

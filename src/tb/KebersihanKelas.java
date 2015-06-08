@@ -43,19 +43,20 @@ public class KebersihanKelas extends KelasUtama {
     
 
     @Override
-    void Input() {
-        System.out.println("Sirkulasi Udara : ");
+    public void Input() {
+/*        System.out.println("Sirkulasi Udara : ");
         setSirkulasiUdara(input.next());
         System.out.println("Pencahayaan : ");
         setPencahayaan(input.nextInt());
         System.out.println("Kelembapan : ");
         setKelembapan(input.nextInt());
         System.out.println("Suhu(Celcius) : ");
-        setSuhuCel(input.nextInt());
+        setSuhuCel(input.nextInt());    
+*/    
     }
 
     @Override
-    void View() {
+    public void View() {
         System.out.println("Sirkulasi Udara : "+getSirkulasiUdara());
         System.out.println("Pencahayaan : "+getPencahayaan());
         System.out.println("Kelembapan : "+getKelembapan());
@@ -63,7 +64,7 @@ public class KebersihanKelas extends KelasUtama {
     }
 
     @Override
-    void Analisa() {
+    public void Analisa() {
         if(getSirkulasiUdara().equals("Lancar")){
             System.out.print("SESUAI!");
 	}

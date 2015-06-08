@@ -52,8 +52,8 @@ public class KenyamananKelas extends KelasUtama{
     
 
     @Override
-    void Input() {
-        System.out.println("Masukkan Bising : ");
+    public void Input() {
+/*      System.out.println("Masukkan Bising : ");
         setKebisingan(input.next());      
         System.out.println("Masukkan Bau : ");
         setBau(input.next());
@@ -63,10 +63,11 @@ public class KenyamananKelas extends KelasUtama{
         setKerusakan(input.next());        
         System.out.println("Masukkan Keausan : ");
         setKeausan(input.next());
+*/    
     }
 
     @Override
-    void View() {
+    public void View() {
         System.out.println("Kebisingan = "+getKebisingan());
         System.out.println("Bau = "+getBau());
         System.out.println("Kebocoran = "+getKebocoran());
@@ -75,7 +76,7 @@ public class KenyamananKelas extends KelasUtama{
     }
 
     @Override
-    void Analisa() {
+    public void Analisa() {
         if(getKebisingan().equals("TIDAK BISING")){
             System.out.println("SESUAI");
 	}
@@ -121,6 +122,5 @@ public class KenyamananKelas extends KelasUtama{
         catch (Exception e){
             e.printStackTrace();
         }
-    }
-    
+    }    
 }

@@ -1,12 +1,12 @@
-
 package tb;
 import java.util.Scanner;
 import java.io.FileWriter;
+
 public class CCTV implements JumlahKondisiSarana{
 Scanner input = new Scanner(System.in);
-        private int Jumlah;
-        private String Kondisi;
-        private String Posisi;
+    private int Jumlah;
+    private String Kondisi;
+    private String Posisi;
 
     public int getJumlah() {
         return Jumlah;
@@ -35,8 +35,8 @@ Scanner input = new Scanner(System.in);
     
     @Override
     public int analisisJumlah() {
-System.out.println("Masukkan Jumlah CCTV : ");
-		setJumlah(input.nextInt());
+    /*    System.out.println("Masukkan Jumlah CCTV : ");
+		setJumlah(input.nextInt()); */
 		if(getJumlah() == 2){
 			return 1;
 		}
@@ -47,8 +47,8 @@ System.out.println("Masukkan Jumlah CCTV : ");
 
     @Override
     public int analisisKondisi() {
-    System.out.println("Masukkan Kondisi CCTV : ");
-		setKondisi(input.next());
+    /*    System.out.println("Masukkan Kondisi CCTV : ");
+		setKondisi(input.next());   */
 		if(getKondisi().equals("Baik") && getJumlah() == 2){
 			return 1;
 		}
@@ -59,8 +59,8 @@ System.out.println("Masukkan Jumlah CCTV : ");
 
     @Override
     public int analisisPosisi() {	
-        System.out.println("Masukkan Posisi CCTV : ");
-		setPosisi(input.next());
+    /*    System.out.println("Masukkan Posisi CCTV : ");
+		setPosisi(input.next());    */
 		if(getPosisi().equals("Depan dan Belakang")){
 			return 1;
 		}

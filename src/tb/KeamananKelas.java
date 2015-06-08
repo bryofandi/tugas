@@ -34,25 +34,25 @@ public class KeamananKelas extends KelasUtama {
     
     
     @Override
-    void Input() {        
-        System.out.println("Kekokohan : ");
+    public void Input() {        
+/*        System.out.println("Kekokohan : ");
         setKekokohan(input.next());
         System.out.println("Kunci Pintu dan Jendela : ");
         setKunciPintuJendela(input.next());
         System.out.println("Bahaya : ");
         setBahaya(input.next());
-        
+*/        
     }
 
     @Override
-    void View() {
+    public void View() {
         System.out.println("Kekokohan : "+getKekokohan());
         System.out.println("Kunci Pintu dan Jendela : "+getKunciPintuJendela());
         System.out.println("Bahaya : "+getBahaya());
     }
 
     @Override
-    void Analisa() {
+    public void Analisa() {
             if(getKekokohan().equals("Kokohan")){
         	System.out.println("SESUAI!");
         }

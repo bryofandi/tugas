@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tb;
 
 import java.io.FileWriter;
@@ -35,8 +30,8 @@ public class Lampu implements JumlahKondisiSarana{
 	
 	@Override
 	public int analisisJumlah() {
-		System.out.println("Masukkan Jumlah Lampu : ");
-		setJumlah(input.nextInt());
+    /*        System.out.println("Masukkan Jumlah Lampu : ");
+		setJumlah(input.nextInt()); */
 		if(getJumlah() >= 18){
 			return 1;
 		}
@@ -47,8 +42,8 @@ public class Lampu implements JumlahKondisiSarana{
 
 	@Override
 	public int analisisKondisi() {
-		System.out.println("Masukkan Kondisi Lampu : ");
-		setPosisi(input.next());
+    /*        System.out.println("Masukkan Kondisi Lampu : ");
+		setPosisi(input.next());    */
 		if(getKondisi().equals("Baik")&& getJumlah() == 18){
 			return 1;
 		}
@@ -59,8 +54,8 @@ public class Lampu implements JumlahKondisiSarana{
 
 	@Override
 	public int analisisPosisi() {
-		System.out.println("Masukkan Posisi Lampu : ");
-		setPosisi(input.next());
+    /*        System.out.println("Masukkan Posisi Lampu : ");
+		setPosisi(input.next());    */
 		if(getPosisi().equals("Atas")){
 			return 1; 
 		}

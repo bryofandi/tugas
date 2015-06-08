@@ -28,8 +28,8 @@ public class KipasAngin implements JumlahKondisiSarana {
 	
 	@Override
 	public int analisisJumlah() {
-		System.out.println("Masukkan Jumlah Kipas Angin : ");
-		setJumlah(input.nextInt());
+    /*        System.out.println("Masukkan Jumlah Kipas Angin : ");
+		setJumlah(input.nextInt()); */
 		if(getJumlah() >= 2){
 			return 1;
 		}
@@ -40,9 +40,9 @@ public class KipasAngin implements JumlahKondisiSarana {
 
 	@Override
 	public int analisisKondisi() {
-		System.out.println("Masukkan Kondisi Kipas Angin : ");
-		setKondisi(input.next());
-		if(getKondisi().equals("Baik") && getJumlah() == 2){
+    /*        System.out.println("Masukkan Kondisi Kipas Angin : ");
+		setKondisi(input.next());   */
+        	if(getKondisi().equals("Baik") && getJumlah() == 2){
 			return 1;
 		}
 		else{
@@ -52,8 +52,8 @@ public class KipasAngin implements JumlahKondisiSarana {
 
 	@Override
 	public int analisisPosisi() {
-		System.out.println("Masukkan Posisi Kipas Angin: ");
-		setPosisi(input.next());
+    /*        System.out.println("Masukkan Posisi Kipas Angin: ");
+		setPosisi(input.next());    */
 		if(getPosisi().equals("Atas")){
 			return 1;
 		}

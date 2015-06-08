@@ -1,1 +1,1 @@
-Nama Ruangan : 4234Lokasi : fJurusan : sdfaPanjang : 2Lebar : 32Jumlah Pintu : 23Jumlah Kursi : 23Jumlah Jendela : 13
+Nama Ruangan : ciokLokasi : GKB3Jurusan : InformatikaPanjang : 23Lebar : 45Jumlah Pintu : 23Jumlah Kursi : 12Jumlah Jendela : 42

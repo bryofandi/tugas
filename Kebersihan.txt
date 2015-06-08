@@ -1,1 +1,1 @@
-Sirkulasi Udara : fdsfPencahayaan : 23Kelembapan : 12SuhuCel : 32
+Sirkulasi Udara : LancarPencahayaan : 23Kelembapan : 23SuhuCel : 32

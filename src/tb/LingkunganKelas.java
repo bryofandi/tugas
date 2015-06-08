@@ -60,8 +60,8 @@ public class LingkunganKelas extends KelasUtama{
     
 
     @Override
-    void Input() {
-        System.out.println("Kondisi Lantai : ");
+    public void Input() {
+/*      System.out.println("Kondisi Lantai : ");
         setLantai(input.next());
         System.out.println("Kondisi Dinding : ");
         setDinding(input.next());
@@ -71,10 +71,11 @@ public class LingkunganKelas extends KelasUtama{
         setPintu(input.next());
         System.out.println("Kondisi Jendela : ");
         setJendela(input.next());
-        }
+*/    
+    }
 
     @Override
-    void View() {
+    public void View() {
         System.out.println("Kondisi Lantai : "+getLantai());
         System.out.println("Kondisi Dinding : "+getDinding());
         System.out.println("Kondisi Atap : "+getAtap());
@@ -82,7 +83,7 @@ public class LingkunganKelas extends KelasUtama{
         System.out.println("Kondisi Jendela : "+getJendela());}
 
     @Override
-    void Analisa() {
+    public void Analisa() {
                 if(getLantai().equals("Bersih")){
 			System.out.println("Kondisi Lantai SESUAI");
 		}

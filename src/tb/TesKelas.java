@@ -5,14 +5,14 @@ public class TesKelas {
     public static void main (String[] args) {
         Scanner input = new Scanner(System.in);
         
-        TB kelas = new TB();
+        IdentitasKelas kelas = new IdentitasKelas();
         IdentitasKelas id = new IdentitasKelas();
         KeamananKelas aman = new KeamananKelas();
         KebersihanKelas bersih = new KebersihanKelas();
         KenyamananKelas nyaman = new KenyamananKelas();
         LingkunganKelas lingkung = new LingkunganKelas();
         
-        id.IdentitasRuangKelas();
+    /*    id.IdentitasRuangKelas();
         id.KondisiKelas();
         id.Luas();
         id.RasioLuas();
@@ -27,11 +27,11 @@ public class TesKelas {
         bersih.Input();
         bersih.Save();
         bersih.View();
-        /*aman.KeamananKelas();
+        aman.KeamananKelas();
         bersih.KebersihanRuangKelas();
         nyaman.KenyamananKelas();
         lingkung.LingkunganRuangKelas();
-       */
+    */
         
         System.out.println("Hasil  : ");
         String Pilihan = input.next();
